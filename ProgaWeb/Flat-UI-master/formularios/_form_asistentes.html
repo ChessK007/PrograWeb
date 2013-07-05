@@ -1,20 +1,20 @@
 <html>
 	<head>
-		<title>Instructor</title>
+		<title>Asistentes</title>
 	</head>
-		<h1>Registro para el Instructor del SITEC<h1>
+		<h1>Registro de Asistentes para el Evento<h1>
 		<body>
 			<form action=""  method="post">
 				<!--Creacion de Cajas de Texto -->
 				<div class="datos">
-				<br><input type="text" id="especialidad" name="Especialidad" 
+				<br><input type="text" id="IdAsitente" name="IdAsistente" 
+					 size="20" maxlength="30" placeholder="ID"
+					required="required"><br>	
+				<br><input  type="text" id="Especialidad" name="Especialidad"
 					 size="20" maxlength="30" placeholder="Especialidad"
 					required="required"><br>	
-				<br><input  type="text" id="procedencia" name="Procedencia"
-					 size="20" maxlength="30" placeholder="Procedencia"
-					required="required"><br>	
-				<br><input type="text" id="tema" name="Tema"
-					size="20" maxlength="30" placeholder="Tema"
+				<br><input type="number" id="Cuota" name="Cuota"
+					size="3" maxlength="3" placeholder="Cuota"
 				required="required"><br>
 				</div>
 				<!--Creacion de Botones-->
@@ -23,14 +23,7 @@
 				<input type="reset" name="limpiar" value="Borrar los datos introducidos" />	
 				</div>
 			</form>	
-		
+
 		</body>
-
-
-
-
-
-
-
 
 </html>
