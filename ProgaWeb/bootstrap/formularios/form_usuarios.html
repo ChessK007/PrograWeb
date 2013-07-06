@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Form1</title>
+<link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+</style>
+</head>
+
+<body> 
+ <div class="container pull-left"> 
+   <div class="btn-inverse"> 
+    <form class="navbar-form " >
+	  <h2 align="center">Usuarios</h2>
+      <input type="text" class="login-field " value placeholder="Apellido Paterno" id="paterno">
+	  <br>
+	  <input type="text" class="login-field " value placeholder="Apellido Materno" id="materno">
+	  <br>
+	  <input type="text" class="login-field " value placeholder="Nombre" id="nombre">
+	  <br>
+	  Sexo:
+	  <br>
+	  <div class="btn">
+	    <table border="2">
+	      <tr>  <td><input type="radio" name="sexo"></td> <td>Masculino</td> </tr>
+		  <tr>  <td><input type="radio" name="sexo"></td> <td>Femenino</td> </tr>
+	    </table>
+	  </div>
+	  <br>
+	  <input type="number" maxlength="2" class="login-field " value placeholder="Edad" id="edad">
+	  <br>
+	  <input type="email" id="email" class="login-field " value placeholder="E-mail">	
+	  <br>
+	  <input type="text" maxlength="13" id="rfc" class="login-field " value placeholder="RFC">
+	  <br>
+	  <input type="text" id="noControl" maxlength="8" class="login-field" value placeholder="No. de Control">
+	  <br>
+	  <input type="submit" value="Registrar" class="btn">
+	  <input type="submit" value="Cancelar" class="btn">
+    </form>
+   </div>	
+</div> 
+  <script src="../../bootstrap/js/bootstrap.js"></script> 
+  <script src="http://code.jquery.com/jquery.js"></script>
+</body>
+</html>
