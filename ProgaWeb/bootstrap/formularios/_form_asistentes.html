@@ -1,8 +1,17 @@
-<html>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en-US">
     <head>
-    <link href="../css/bootstrap.css" rel="stylesheet"> 
+        <meta charset="UTF-8">
+        <title>Formulario Asistentes</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css/Clases.css">
     </head>
-    <body>
+    <body class="fondo">
+
         <div class="navbar" >
             <div class="navbar-inner">
                 <div class="container">
@@ -20,22 +29,23 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="container">
 
             <form class="form-signin" style="background-color:  skyblue">
-                <h3 class="form-signin-heading">Asistente Tipo Usuario</h3>
-                <br>
-                <label for="tipo">Tipo Usuario</label>
-                <input id="tipo" type="text" class="span3" placeholder="Tipo..." required="required">      
+                <h3 class="form-signin-heading">Asistentes</h3>
+                <input type="text" class="input-block-level" placeholder="Especialidad" required="required">
 
-                <button type="submit" class="btn-primary">Enviar</button>
-                <a href="rutaretorno.html">  <button type="button" class="btn-danger">Regresar </button> </a>
+                <input type="text" class="input-block-level" placeholder="Cuota" required="required">
+
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <a href="rutaretorno.html">  <button type="button" class="btn btn-danger">Regresar </button> </a>
             </form>
+
         </div> <!-- /container -->
 
-        <!--script src="js/bootstrap.js"></script>-->
-
-
+        <script src="js/bootstrap.js"></script>
     </body>
 </html>
+
