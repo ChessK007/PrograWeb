@@ -8,7 +8,6 @@ Class Actividades {
     private $lugares;
     private $precio;
     private $descripcion;
-    private $id_usuario;
 
     public function get_id_actividad() {
         return $this->id_actividad;
@@ -56,14 +55,6 @@ Class Actividades {
 
     public function set_descripcion($descripcion) {
         $this->descripcion = $descripcion;
-    }
-
-    public function get_id_usuario() {
-        return $this->id_usuario;
-    }
-
-    public function set_id_usuario($id_usuario) {
-        $this->id_usuario = $id_usuario;
     }
 
 }
