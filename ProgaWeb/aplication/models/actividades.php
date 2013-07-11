@@ -10,59 +10,59 @@ Class Actividades {
     private $descripcion;
     private $id_usuario;
 
-    public function getId_actividad() {
+    public function get_id_actividad() {
         return $this->id_actividad;
     }
 
-    public function setId_actividad($id_actividad) {
+    public function set_id_actividad($id_actividad) {
         $this->id_actividad = $id_actividad;
     }
 
-    public function getId_evento() {
+    public function get_id_evento() {
         return $this->id_evento;
     }
 
-    public function setId_evento($id_evento) {
+    public function set_id_evento($id_evento) {
         $this->id_evento = $id_evento;
     }
 
-    public function getNombre_actividad() {
+    public function get_nombre_actividad() {
         return $this->nombre_actividad;
     }
 
-    public function setNombre_actividad($nombre_actividad) {
+    public function set_nombre_actividad($nombre_actividad) {
         $this->nombre_actividad = $nombre_actividad;
     }
 
-    public function getLugares() {
+    public function get_lugares() {
         return $this->lugares;
     }
 
-    public function setLugares($lugares) {
+    public function set_lugares($lugares) {
         $this->lugares = $lugares;
     }
 
-    public function getPrecio() {
+    public function get_precio() {
         return $this->precio;
     }
 
-    public function setPrecio($precio) {
+    public function set_precio($precio) {
         $this->precio = $precio;
     }
 
-    public function getDescripcion() {
+    public function get_descripcion() {
         return $this->descripcion;
     }
 
-    public function setDescripcion($descripcion) {
+    public function set_descripcion($descripcion) {
         $this->descripcion = $descripcion;
     }
 
-    public function getId_usuario() {
+    public function get_id_usuario() {
         return $this->id_usuario;
     }
 
-    public function setId_usuario($id_usuario) {
+    public function set_id_usuario($id_usuario) {
         $this->id_usuario = $id_usuario;
     }
 

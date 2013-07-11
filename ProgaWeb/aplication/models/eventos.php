@@ -11,67 +11,67 @@ Class Eventos {
     private $fecha_inicio;
     private $fecha_fin;
 
-    public function getId_evento() {
+    public function get_id_evento() {
         return $this->id_evento;
     }
 
-    public function setId_evento($id_evento) {
+    public function set_id_evento($id_evento) {
         $this->id_evento = $id_evento;
     }
 
-    public function getNombre_evento() {
+    public function get_nombre_evento() {
         return $this->nombre_evento;
     }
 
-    public function setNombre_evento($nombre_evento) {
+    public function set_nombre_evento($nombre_evento) {
         $this->nombre_evento = $nombre_evento;
     }
 
-    public function getContacto() {
+    public function get_contacto() {
         return $this->contacto;
     }
 
-    public function setContacto($contacto) {
+    public function set_contacto($contacto) {
         $this->contacto = $contacto;
     }
 
-    public function getCuando() {
+    public function get_cuando() {
         return $this->cuando;
     }
 
-    public function setCuando($cuando) {
+    public function set_cuando($cuando) {
         $this->cuando = $cuando;
     }
 
-    public function getDonde() {
+    public function get_donde() {
         return $this->donde;
     }
 
-    public function setDonde($donde) {
+    public function set_donde($donde) {
         $this->donde = $donde;
     }
 
-    public function getInformacion() {
+    public function get_informacion() {
         return $this->informacion;
     }
 
-    public function setInformacion($informacion) {
+    public function set_informacion($informacion) {
         $this->informacion = $informacion;
     }
 
-    public function getFecha_inicio() {
+    public function get_fecha_inicio() {
         return $this->fecha_inicio;
     }
 
-    public function setFecha_inicio($fecha_inicio) {
+    public function set_fecha_inicio($fecha_inicio) {
         $this->fecha_inicio = $fecha_inicio;
     }
 
-    public function getFecha_fin() {
+    public function get_fecha_fin() {
         return $this->fecha_fin;
     }
 
-    public function setFecha_fin($fecha_fin) {
+    public function set_fecha_fin($fecha_fin) {
         $this->fecha_fin = $fecha_fin;
     }
 
