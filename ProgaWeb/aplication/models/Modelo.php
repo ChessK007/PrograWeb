@@ -7,7 +7,7 @@
                       $this->db->Connect('localhost', 'root', '', 'db_eventos');
            }
 
-           public function consulta_datos(){
+           public function consulta_datos()  {
 
                       $rs = $this->db->Execute('SELECT * from'.$this->nombre);
                       return $rs;
