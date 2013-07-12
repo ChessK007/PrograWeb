@@ -1,16 +1,15 @@
-<?php
-include_once('adodb5/adodb.inc.php');
+<?php include_once('adodb5/adodb.inc.php');
 class conexion{
-    private $db='mysql',$servidor='localhost',$user='root',$pass='****',$base='prueba_adobd'------------------------,
-
+////    private $db='mysql',$servidor='localhost',$user='root',$pass='****',$base='prueba_adobd'------------------------
+//
 public function conectar(){
-    $db=
+    
 }
 }
 ?>
 
 
-function insertar(){
+<!--function insertar(){
     $con=new conexion();
     $db=$con->conectar();
     $id=$this->getId();
@@ -21,5 +20,5 @@ function insertar(){
     $pass=$this->getpass();
     $sql='consulta';
     $rs=$db->Execute($sql);
-    return $rs;
+return $rs;-->
 }

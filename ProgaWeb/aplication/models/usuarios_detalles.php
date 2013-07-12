@@ -1,7 +1,7 @@
 <?php
 
-class UsuariosDetalles {
-
+class UsuariosDetalles extends Modelo{
+    private $usuarios_detalle= 'usuarios_detalles';
     private $id_usuario_detalle;
     private $id_asistente;
     private $id_instructor;
