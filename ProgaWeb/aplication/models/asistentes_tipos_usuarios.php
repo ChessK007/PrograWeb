@@ -1,6 +1,6 @@
 <?php
 
-<<<<<<< HEAD:ProgaWeb/aplication/models/asistentes_tipos_usuarios.php
+//<<<<<<< HEAD:ProgaWeb/aplication/models/asistentes_tipos_usuarios.php
 Class AsistenteTipoUsuario {
 
     private $id_asistente_tipo_usuario;
@@ -41,7 +41,7 @@ Class AsistenteTipoUsuario {
     }
 
 }
-=======
+//=======
 Class Asistente_tipo_usuario{
             
             private $id_asistente_tipo_usuario;
@@ -75,6 +75,6 @@ Class Asistente_tipo_usuario{
 
               
         }
->>>>>>> 3fcf79b44cecb7fe97aeed15e997a5634d3c5696:ProgaWeb/aplication/models/asistente_tipo_usuario.php
+//>>>>>>> 3fcf79b44cecb7fe97aeed15e997a5634d3c5696:ProgaWeb/aplication/models/asistente_tipo_usuario.php
 
 ?>
