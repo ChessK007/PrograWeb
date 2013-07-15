@@ -1,6 +1,6 @@
 <?php
 
-class UsuariosDetalles {
+class UsuariosDetalles extends Modelo{
 
     private $id_usuario_detalle;
     private $id_asistente;
