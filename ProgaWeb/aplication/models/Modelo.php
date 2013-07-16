@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
    class Modelo{
            private $db;
@@ -10,29 +10,35 @@
 
            public function consulta_datos()  {
 
-                      $rs = $this->db->Execute(' SELECT * from'.$this-> nombre_tabla);
+                      $rs = $this->db->Execute(' SELECT * from '.$this-> nombre_tabla);
                       $this->get_error($rs,'Error en la consulta de datos');
                       return $rs;
            }
            
            public function inserta($rs){
-               $rs = array();
-               $rs['nombre']='Juan';
-               $rs['email']='juan@gghh.mmn';
-               $rs['password']='*****';
-               $sql_insert= $this->db->GetInsertSql($this->nombre_tabla,$rs);
-               
+               //$rs = array();
+               //$rs['nombre']='Juan';
+               //$rs['email']='juan@gghh.mmn';
+               //$rs['password']='*****';
+               $sql_insert = $this->db->GetInsertSql($this->nombre_tabla,$rs);
                $this->get_error($this->db->Execute($sql_insert),'Error en Modelo.inserta');
            }
            
-           public function get_error($result,$tipo){
+           public function get_error($result,$tipo_error){
                if($result === false){
                    die('Redireccionar a la pagina de error '.$tipo_error);
                }
            }
            
            public function show_grid($num ='10'){
-               $sql = "SELECT * FROM ".$this->nombre_tabla;//Podemos poner alias
+               $sql = "SELECT id_usuario_detalle as ID,
+                       apellido_paterno as Apellido_Paterno,
+                       apellido_materno as Apellido_Materno,
+                       nombre as Nombre,
+                       sexo as Sexo,
+                       edad as Edad,
+                       email as Email,
+                       nctr_rfc as Control FROM ".$this->nombre_tabla;
                $grid = new ADODB_Pager($this->db,$sql);
                $grid->Render($rows_per_page=$num);
            }
@@ -62,25 +68,5 @@
            }
    }
 ?>
-=======
-<?php
 
-class Modelo{
-    private $db;
-    
-    function Modelo(){
-        $this->db= ADONewConnection('mysql');
-        $this->db->debug = TRUE;
-        $this->db->Connect('localhost','root','len21se13','Proyecto');
-        
-    }
-    
-    public function consulta_datos(){
-        $rs = $this-> db -> Execute ('Select * from'.$this->instructor);
-        return $rs;
-    }
-    
-}
 
-?>
->>>>>>> 261375060562ef8eb8b2975b6e24ec688e24d31b

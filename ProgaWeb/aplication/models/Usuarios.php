@@ -3,23 +3,27 @@
   class Usuarios extends Modelo{
  
            
-			public $nombre_tabla= ' usuarios_detalles';
+			public $nombre_tabla= 'usuarios_detalles';
                         public $pk = 'id';
                         public $atributos = array(
+                                            'apellido_paterno'=>array(''),
+                                            'apellido_materno'=>array(''),
                                             'nombre'=>array(''),
+                                            'sexo'=>array(''),
+                                            'edad'=>array(''),
                                             'email'=>array(''),
-                                            'password'=>array('')
+                                            
+                                            'nctr_rfc'=>array('')
+                            
                         );
                         private $id_usuario_detalle;
-                        private $id_asistente;
-                        private $id_instructor;
                         private $apellido_paterno;
                         private $apellido_materno;
                         private $nombre;
                         private $sexo;
                         private $edad;
                         private $email;
-                        private $rfc;
+                        private $nctr_rfc;
                         
                         function _construct(){
 			     $this->Modelo();
@@ -45,21 +49,7 @@
                             $this->id_usuario_detalle = $id_usuario_detalle;
                         }
 
-                        public function get_id_asistente() {
-                            return $this->id_asistente;
-                        }
-
-                        public function set_id_asistente($id_asistente) {
-                            $this->id_asistente = $id_asistente;
-                        }
-
-                        public function get_id_instructor() {
-                            return $this->id_instructor;
-                        }
-
-                        public function set_id_instructor($id_instructor) {
-                            $this->id_instructor = $id_instructor;
-                        }
+                       
 
                         public function get_apellido_paterno() {
                             return $this->apellido_paterno;
@@ -109,12 +99,12 @@
                             $this->email = $email;
                         }
 
-                       public function get_rfc() {
-                            return $this->rfc;
+                        public function set_control($control){
+                           $this->nctr_rfc=$control;
                        }
-
-                       public function set_rfc($rfc) {
-                            $this->rfc = $rfc;
+                       
+                       public function get_control(){
+                           return $this->nctr_rfc;
                        }
  }
 ?>

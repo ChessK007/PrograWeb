@@ -29,26 +29,26 @@
         </div>
 		
 		<div class="container">
-		  <form class="form-signin">
+		  <form class="form-signin" action="../../controllers/RegistroControllers.php" method="post">
 		    <h3>Usuarios</h3>
-			<input type="text" class="login-field " value placeholder="Apellido Paterno" id="paterno">
+			<input type="text" class="login-field " value placeholder="paterno" id="paterno" name="paterno">
 	        <br>
-	        <input type="text" class="login-field " value placeholder="Apellido Materno" id="materno">
+	        <input type="text" class="login-field " value placeholder="materno" id="materno" name="materno">
 	        <br>
-	        <input type="text" class="login-field " value placeholder="Nombre" id="nombre">
+	        <input type="text" class="login-field " value placeholder="Nombre" id="nombre" name="nombre">
 	        <br>
 			<label> Sexo:</label>
-			<input type="radio" name="sexo">Masculino
+			<input type="radio" name="sexo" value="M">Masculino
 			<br>
-			<input type="radio" name="sexo">Femenino
+			<input type="radio" name="sexo" value="F">Femenino
 			<br>
-			<input type="number" maxlength="2" class="login-field " value placeholder="Edad" id="edad">
+			<input type="number" maxlength="2" class="login-field " value placeholder="Edad" id="edad" name="edad">
 	        <br>
-	        <input type="email" id="email" class="login-field " value placeholder="E-mail">	
+	        <input type="email" id="email" class="login-field " value placeholder="E-mail" name="email">	
 	        <br>
-	        <input type="text" maxlength="13" id="rfc" class="login-field " value placeholder="RFC">
+	        <input type="text" maxlength="13" id="rfc" class="login-field " value placeholder="RFC" name="rfc">
 	        <br>
-	        <input type="text" id="noControl" maxlength="8" class="login-field" value placeholder="No. de Control">
+	        <input type="text" id="control" maxlength="8" class="login-field" value placeholder="No. de Control" name="control">
 			<br>
 			<button class="btn btn-large btn-primary" type="submit" >Aceptar</button>
 			
