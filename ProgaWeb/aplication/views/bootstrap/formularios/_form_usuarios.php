@@ -3,6 +3,22 @@ include('../../layouts/header.php');
 ?>
 <div class="container">
     <center><h1>Ingreso de Datos de Usuario</h1></center>
+
+    <form>
+        <fieldset>
+            <legend>Legend</legend>
+            <label>Label name</label>
+            <input type="text" placeholder="Type something…">
+            <span class="help-block">Example block-level help text here.</span>
+            <label class="checkbox">
+                <input type="checkbox"> Check me out
+            </label>
+            <button type="submit" class="btn">Submit</button>
+        </fieldset>
+    </form>
+
+
+
     <form name="form1">
         <label for="nombre">Nombre</label><br>
         <input id="nombre" type="text" size="20" maxlength="50" required="required"/><br>

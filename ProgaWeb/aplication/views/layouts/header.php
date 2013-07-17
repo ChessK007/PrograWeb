@@ -18,7 +18,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </a>
-
+                        
                         <a class="brand" href="#">Eventos</a>
                         <a class="brand" href="#">Actividades</a>
                         <a class="brand" href="#">Temas</a>
@@ -27,7 +27,7 @@
                         <a class="brand" href="#">Instructores</a>
                         <a class="brand" href="#"></a>
                         <a class="brand" href="#"></a>
-                        <a class="brand" href="#"></a>
+                        <a class="brand" href="/site/inicio.html">Salir</a>
                         
 
                         <div class="nav-collapse collapse">
