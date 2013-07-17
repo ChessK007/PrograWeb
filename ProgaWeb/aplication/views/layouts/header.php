@@ -2,10 +2,10 @@
 <html>
     <head>
         <title></title>
-        <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">        
+        <link href="../css/bootstrap.css" rel="stylesheet">        
 
     </head>
-    <body background="../bootstrap/img/10753.jpg">
+    <body background="../img/10753.jpg">
         
         <div class="container">
             <div> <img src="../img/top_bg1-8.jpg"></div>
