@@ -1,16 +1,27 @@
 <html>
     <head>
     <link href="../css/bootstrap.css" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
     </head>
     <body>
         <div class="navbar" >
             <div class="navbar-inner">
                 <div class="container">
-                    <span class="brand">Eventos ITC</span>
+                    <span class="brand">ITC</span>
                     <div class="nav-collapse">
                         <ul class="nav">
-                            <li class="divider-vertical"><a href="#">Usuario</a></li>
-                            <li class="divider-vertical"><a href="#">Evento</a></li>
+                            <ul class="nav nav-tabs">
+								<li class="dropdown">
+                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Evento<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Actualizar</a></li>
+								<li><a href="#">Registrar</a></li>
+								<li><a href="#">Eliminar</a></li>
+								<li><a href="#">Reporte</a></li>
+							</ul>
+								</li>
+							
+                            
                             <li class="divider-vertical"><a href="#">Actividad</a></li>
                             <li class="divider-vertical"><a href="#">Tipo Usuario</a></li>
                             <li class="divider-vertical"><a href="#">Eventos Tipo Usuario</a></li>
@@ -23,18 +34,21 @@
         
         <div class="container">
 
-            <form class="form-signin" style="background-color:  skyblue">
-                <h3 class="form-signin-heading">Asistente Tipo Usuario</h3>
+            <form action="" method="post" class="well">
+                <h3 class="form-signin-heading">Tipo Usuario</h3>
                 <br>
                 <label for="tipo">Tipo Usuario</label>
-                <input id="tipo" type="text" class="span3" placeholder="Tipo..." required="required">      
-
-                <button type="submit" class="btn-primary">Enviar</button>
-                <a href="rutaretorno.html">  <button type="button" class="btn-danger">Regresar </button> </a>
+                <input id="tipo" type="text" class="span3" placeholder="Tipo" required="required">      
+				<label for="descrip">Descripcion</label>
+                <textarea class="span4" id="descrip" name="descrip" rows="3" cols="20" required="required"> </textarea><br/>
+				<br>
+				
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <a href="_form_index.html">  <button type="button" class="btn btn-danger">Regresar </button> </a>
             </form>
-        </div> <!-- /container -->
+        </div> 
 
-        <!--script src="js/bootstrap.js"></script>-->
+       
 
 
     </body>
