@@ -10,15 +10,13 @@
             <a class="brand" href="#">Eventos</a>
             <a class="brand" href="_form_actividades.php">Actividades</a>
             <a class="brand" href="_form_tipos_usuarios.php">Tipos de Usuario</a>
-            <a class="brand" href="#">Actividades</a>
+            <a class="brand" href="_form_usuarios.php">Usuarios</a>
             <a class="brand" href="#">Tipos</a>
             <a class="brand" href="#">Instructores</a>
             <a class="brand" href="#"></a>
             <a class="brand" href="#"></a>
-            <a class="brand" href="../site/inicio.html">Salir</a>
-            <div class="nav-collapse collapse">
-            </div>
-
+            <a class="brand" href="index.php">Salir</a>
+            
         </div>
     </div>
 </div>
