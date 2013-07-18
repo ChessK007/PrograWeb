@@ -1,11 +1,8 @@
 <?php
 
 class UsuariosDetalles extends Modelo{
-<<<<<<< HEAD
 
-=======
     private $usuarios_detalles= 'usuarios_detalles';
->>>>>>> 261375060562ef8eb8b2975b6e24ec688e24d31b
     private $id_usuario_detalle;
     private $id_asistente;
     private $id_instructor;

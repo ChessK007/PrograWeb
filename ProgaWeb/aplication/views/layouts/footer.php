@@ -1,7 +1,2 @@
-<?php
-
-
-    echo "</div>";
-  echo "</body>";
-echo "</html>";  
-?>
+</body>
+</html>

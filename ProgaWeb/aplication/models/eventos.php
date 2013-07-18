@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 class Eventos extends Modelo{
 
     public  $nombre_tabla='eventos';
@@ -40,6 +41,17 @@ class Eventos extends Modelo{
         }
         return $rs;
     }
+=======
+Class Eventos {
+
+     private $id_evento;
+    private $nombre;
+    private $lugar;
+    private $f_inicio;
+    private $f_fin;
+    private $descripcion;
+    private $contacto;
+>>>>>>> upstream/master
 
     public function get_id_evento() {
         return $this->id_evento;
@@ -49,12 +61,44 @@ class Eventos extends Modelo{
         $this->id_evento = $id_evento;
     }
 
-    public function get_nombre_evento() {
-        return $this->nombre_evento;
+    public function get_nombre() {
+        return $this->nombre;
     }
 
-    public function set_nombre_evento($nombre_evento) {
-        $this->nombre_evento = $nombre_evento;
+    public function set_nombre($nombre) {
+        $this->nombre = $nombre;
+    }
+
+    public function get_lugar() {
+        return $this->lugar;
+    }
+
+    public function set_lugar($lugar) {
+        $this->lugar = $lugar;
+    }
+
+    public function get_f_inicio() {
+        return $this->f_inicio;
+    }
+
+    public function set_f_inicio($f_inicio) {
+        $this->f_inicio = $f_inicio;
+    }
+
+    public function get_f_fin() {
+        return $this->f_fin;
+    }
+
+    public function set_f_fin($f_fin) {
+        $this->f_fin = $f_fin;
+    }
+
+    public function get_descripcion() {
+        return $this->descripcion;
+    }
+
+    public function set_descripcion($descripcion) {
+        $this->descripcion = $descripcion;
     }
 
     public function get_contacto() {
@@ -63,46 +107,6 @@ class Eventos extends Modelo{
 
     public function set_contacto($contacto) {
         $this->contacto = $contacto;
-    }
-
-    public function get_cuando() {
-        return $this->cuando;
-    }
-
-    public function set_cuando($cuando) {
-        $this->cuando = $cuando;
-    }
-
-    public function get_donde() {
-        return $this->donde;
-    }
-
-    public function set_donde($donde) {
-        $this->donde = $donde;
-    }
-
-    public function get_informacion() {
-        return $this->informacion;
-    }
-
-    public function set_informacion($informacion) {
-        $this->informacion = $informacion;
-    }
-
-    public function get_fecha_inicio() {
-        return $this->fecha_inicio;
-    }
-
-    public function set_fecha_inicio($fecha_inicio) {
-        $this->fecha_inicio = $fecha_inicio;
-    }
-
-    public function get_fecha_fin() {
-        return $this->fecha_fin;
-    }
-
-    public function set_fecha_fin($fecha_fin) {
-        $this->fecha_fin = $fecha_fin;
     }
 
 }
