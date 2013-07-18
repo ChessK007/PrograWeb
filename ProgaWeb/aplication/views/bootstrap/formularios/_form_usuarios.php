@@ -1,5 +1,6 @@
 <?php
 include('../../layouts/header.php');
+include('../../layouts/navegador.php');
 ?>
 <div class="container">
     <center><h1>Ingreso de Datos de Usuario</h1></center>
