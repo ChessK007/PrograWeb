@@ -1,4 +1,3 @@
-
 <?php
    class Modelo{
            private $db;
@@ -22,11 +21,13 @@
                //$rs['password']='*****';
                $sql_insert = $this->db->GetInsertSql($this->nombre_tabla,$rs);
                $this->get_error($this->db->Execute($sql_insert),'Error en Modelo.inserta');
+               return true;//Si pasa la linea anterior no hubo error por lo tanto insercion en la BD
            }
            
            public function get_error($result,$tipo_error){
                if($result === false){
                    die('Redireccionar a la pagina de error '.$tipo_error);
+                   return false;//No se hizo nada
                }
            }
            

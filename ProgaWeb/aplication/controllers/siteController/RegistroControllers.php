@@ -1,5 +1,5 @@
 <?php
-  include("../models/Modelo.php");
+  /*include("../models/Modelo.php");
   include('../models/Usuarios.php');
   include('../libs/adodb5/adodb-pager.inc.php');
   include('../libs/adodb5/adodb.inc.php');
@@ -27,5 +27,28 @@
   
   
   //$rs=$usuario->consulta_datos();
-  //print_r($rs->GetRows());
+  //print_r($rs->GetRows());*/
+
+//la clase que viene es extra totalmente 
+  class RegistroControllers extends UsuariosE {
+      
+      
+      function RegistroControllers(){
+          
+      }
+      
+      public function registraUsuarioE($valores){
+          //Funcion que recibe valores y seteara los valores en el objeto
+          parent::UsuariosE();
+          $this->set_nombre($valores['nombre']);
+          $this->set_email($valores['email']);
+          $this->set_password($valores['password']);
+          return $this->inserta($this->get_atributos());
+          
+      }
+      
+     
+  }
+  
+  
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-Class Actividades {
+class Actividades {
 
     private $id_actividad;
     private $id_evento;

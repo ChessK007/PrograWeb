@@ -25,6 +25,10 @@
                         private $email;
                         private $nctr_rfc;
                         
+                        function Usuarios(){
+                            parent::Modelo();//Constructor de la clase Modelo la cual tiene la conexion
+                        }
+                        
                         function _construct(){
 			     $this->Modelo();
 			}

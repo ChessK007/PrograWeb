@@ -1,7 +1,19 @@
 <?php
 
-Class Eventos {
+class Eventos extends Modelo{
 
+    public  $nombre_tabla='eventos';
+    public  $pk='id';
+    public $atributos= array(
+                       'nombre_evento'=>array(''),
+                       'contacto'=>array(''),
+                       'cuando'=>array(''),
+                       'donde'=>array(''),
+                       'informacion'=>array(''),
+                       'fecha_inicio'=>array(''),
+                       'fecha_fin'=>array(''),
+        
+    );
     private $id_evento;
     private $nombre_evento;
     private $contacto;
@@ -10,6 +22,24 @@ Class Eventos {
     private $informacion;
     private $fecha_inicio;
     private $fecha_fin;
+    
+    function Eventos()
+    {
+        parent::Modelo();
+    }
+    
+    function _construct(){
+        $this->Modelo();
+    }
+    
+    public function get_atributos(){
+        $rs = array();
+        foreach($this->atributos as $key => $value){
+            $rs[$key]= $this->$key;
+                                
+        }
+        return $rs;
+    }
 
     public function get_id_evento() {
         return $this->id_evento;
