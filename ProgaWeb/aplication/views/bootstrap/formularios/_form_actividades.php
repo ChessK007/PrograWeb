@@ -8,20 +8,22 @@ include('../../layouts/navegador.php');
     <center><h1>Actividades</h1></center>
     <div class="row">
         <div class="span3"></div>
+
         <div class="span6">
-            <form class="well" action="" method="get"> 
+            <form class="well" name="form2" action="" method="get">
                 <center>
-                    <div class="controls">            
-                        <label>Actividad Solicitada</label>
-                        <input type="text" placeholder="Actividad">
+                    <div class="controls">          
+                        <label for="descripcion">Actividad Solicitada</label> 
+                        <input type="text" name="descripcion" placeholder="Actividad">
                         <input type="submit" class="btn btn-primary" name="Enviar">
-                    </div><!--Lista de Id--> 
+                    </div>
                 </center>
-            </form><!--Formulario-->
+            </form>
         </div>
-        <div class="span3"></div>
-    </div> 
-</div><!--Contenedor-->
+    </div><!--row-->
+</div><!--container-->
+
+<div class="span3"></div>
 
 <?php
 include('../../layouts/footer.php');

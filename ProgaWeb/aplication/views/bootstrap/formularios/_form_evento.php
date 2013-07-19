@@ -1,44 +1,38 @@
- <?php
+<?php
 include('../../layouts/header.php');
 include('../../layouts/navegador.php');
 ?>
 <div class="container">
     <center><h1>Ingreso de Datos del Evento</h1></center>
-
-    <form>
-        <fieldset>
-            <legend>Legend</legend>
-            <label>Label name</label>
-            <input type="text" placeholder="Type something…">
-            <span class="help-block">Example block-level help text here.</span>
-            <label class="checkbox">
-                <input type="checkbox"> Check me out
-            </label>
-            <button type="submit" class="btn">Submit</button>
-        </fieldset>
-    </form>
-
-
-
-    <form name="form1">
-        <label for="nombre">Nombre</label><br>
-        <input id="nombre" type="text" size="20" maxlength="50" required="required"/><br>
-        <label for="Lugar">Lugar</label><br>
-        <input id="lugar" type="text" size="20" maxlength="50" required="required"/><br>
-        <label for="f_inicio">f_inicio</label><br>
-        <input id="f_inicio" type="date" size="20" maxlength="50" required="required"/><br>
-        <label for="f_fin">f_fin</label><br>
-        <input id="f_fin" type="date" size="20" maxlength="50" required="required"/><br>
-       
-        
-        
-        <label for="Descipcion">Descripcion</label><br>
-        <input id="descripcion" type="text" size="20" maxlength="50" required="required"/><br>
+    <div class="span3">
+        <form name="form1" class="well" action="#" method="get">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" class="input-medium" size="20" maxlength="50" required="required"/>
+            <label for="lugar">Lugar</label>
+            <input id="lugar" type="text" class="input-medium" size="20" maxlength="50" required="required"/>
+        </form>
+    </div>
    
-        <label for="Contacto">Contacto</label><br>
-        <input id="contacto" type="text" size="20" maxlength="50" required="required"/><br>
+
+    <div class="span3">
+        <form class="well" name="form1" action="#" method="get">
+            <label for="f_inicio">Fecha de Inicio</label>
+            <input id="f_inicio" type="date" class="input-medium" size="20" maxlength="50" required="required"/>
+            <label for="f_fin">Fecha de Fin</label>
+            <input id="f_fin" type="date" class="input-medium" size="20" maxlength="50" required="required"/> 
+        </form>
+    </div>  
    
-    </form>
+
+    <div class="span5">
+        <form class="well" name="form1" action="#" method="get">
+            <label for="descipcion">Descripci&oacute;n</label>
+            <textarea id="descripcion" type="text" class="input-xlarge" size="20" maxlength="50" required="required"></textarea>
+            <label for="contacto">Contacto</label>
+            <input id="contacto" type="text" class="input-medium" size="20" maxlength="50" required="required"/>
+            <input type="submit" class="btn btn-primary" name="Capturar">
+        </form>
+    </div>
 </div>
 <?php
 include('../../layouts/footer.php');
