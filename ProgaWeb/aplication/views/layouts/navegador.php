@@ -13,7 +13,7 @@
             <a class="brand" href="_form_usuarios.php"><small>Usuarios</small></a>
             <a class="brand" href="#"><small>Clasificacion de Usuario</small></a>
             <a class="brand" href="#"><small>Registro a Evento</small></a>
-            <a class="brand" href="#"><small>Actividades en Evento</small></a>            
+            <a class="brand" href="_form_eve_act_ins.php"><small>Actividades en Evento</small></a>            
             <a href="../../site/inicio.php">  <button type="button" class="btn btn-danger">Salir</button> </a>
             
         </div>
